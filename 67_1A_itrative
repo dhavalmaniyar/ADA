@@ -1,0 +1,13 @@
+
+#include <iostream>
+using namespace std;
+int main(){
+	int x,y,sum=0;
+	cout<<"Enter any two no.";
+	cin>>x>>y;
+	for(int i=0;i<y;i++){
+		sum=sum+x;
+	}
+	cout<<" "<<x<<" x "<<y<<" = "<<sum;
+    return 0;
+}
