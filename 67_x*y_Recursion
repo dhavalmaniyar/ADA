@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int product(int x, int y){
+    int sum=0;
+    if(y==0)
+        return sum;
+    else
+        return sum=x+product(x,y-1);
+}
+int main(){
+	int x,y,ans;
+	cout<<"Enter any two no.";
+	cin>>x>>y;
+    ans=product(x,y);
+	cout<<" "<<x<<" x "<<y<<" = "<<ans;
+    return 0;
+}
