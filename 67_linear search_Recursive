@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int linear(int a[],int n,int item,int i){
+    if(a[i]==item)
+        return -1;
+    else
+        linear(a,n,item,++i);
+    if(i==n)
+        return -1;
+}
+int main()
+{
+    int a[100],i,n,item;
+    cout<<"Enter no. of elements in array "<<endl;
+    cin>>n;
+    cout<<"Enter no.s in array \n";
+    for(i=0l;i<n;i++){
+        cin>>a[i];
+    }
+    cout<<"Enter no. to be searched"<<endl;
+    cin>>item;
+    int c=linear(a,n,item,0);
+    if(c==-1)
+        cout<<"Element not found\n";
+    if(c==1)
+        cout<<"Element found\n";
+    return 0;
+}
